@@ -2,6 +2,25 @@
 
 This little documentation, I am going to compare Mercurial line comands and Git command in common workflows. In any case, to go deeper in this technologies, i recommend you to check the oficial documentation.
 
+- [Git](https://git-scm.com/docs)
+- [Mercurial](https://www.mercurial-scm.org/guide)
+
+# Sections
+- [Simple workflow comparation](#simple-workflow-comparation)
+	- [Starting from scratch](#starting-from-scratch)
+	- [Configuring](#configuring)
+	- [Adding changes](#adding-changes)
+	- [Check differences](#check-differences)
+	- [Check status](#check-status)
+	- [Commit changes](#commit-changes)
+	- [Check workspace log](#check-workspace-log)
+	- [Push commits](#push-commits)
+- [Removing commands](#removing-commands)
+	- [Revert all uncommit changes](#revert-all-uncommit-changes)
+	- [Remove file](#remove-file)
+	- [Remove commit](#remove-commit)
+	
+
 # Simple workflow comparation
 
 ## Starting from scratch
@@ -11,6 +30,15 @@ This little documentation, I am going to compare Mercurial line comands and Git 
 ### Git
 	git init
   
+## Configuring
+### Mercurial
+To configure in mercurial, you need to modify your .hgrc file.
+### Git
+	git remote add <name> <url> # Adding a remote repository
+	git config --global user.name "FIRST_NAME LAST_NAME" # Adding name
+	git config --global user.email "MY_NAME@example.com" # Adding email
+	
+
 ## Adding changes
 ### Mercurial
 	hg add
@@ -47,9 +75,16 @@ This little documentation, I am going to compare Mercurial line comands and Git 
 ### Git
 	git log
 	
+## Push commits
+### Mercurial
+	hg push [OPTIONS]
+
+### Git
+	git push <remote-repository> <branch-name> [OPTIONS]
+	
 # Removing commands
 
-## Revert all changes
+## Revert all uncommit changes
 ### Mercurial
 	hg revert -a [OPTIONS]
 
@@ -65,7 +100,7 @@ This little documentation, I am going to compare Mercurial line comands and Git 
 	git rm [OPTIONS] <file>
 > **Note:** If you do not want to remove the file from disc, use **hg** **forget** **git** **rm** **--cached** **file**
 
-## Uncommit changes
+## Remove commit
 ### Mercurial
 	hg strip [OPTIONS]
 
