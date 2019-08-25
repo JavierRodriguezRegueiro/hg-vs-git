@@ -46,3 +46,28 @@ This little documentation, I am going to compare Mercurial line comands and Git 
 
 ### Git
 	git log
+	
+# Removing commands
+
+## Revert all changes
+### Mercurial
+	hg revert -a [OPTIONS]
+
+### Git
+	git checkout .
+	
+## Remove file
+### Mercurial
+	hg remove [OPTIONS] <file>
+> **Note:** If you do not want to remove the file from disc, use **hg** **forget**
+
+### Git
+	git rm [OPTIONS] <file>
+> **Note:** If you do not want to remove the file from disc, use **hg** **forget** **git** **rm** **--cached** **file**
+
+## Uncommit changes
+### Mercurial
+	hg strip [OPTIONS]
+
+### Git
+	git reset [OPTIONS]
