@@ -1,8 +1,8 @@
 # Mercurial VS Git
 
-This little documentation, i am going to compare Mercurial line comands and Git command in common workflows. In any case, to go deeper in this technologies, i recommend you to check the oficial documentation.
+This little documentation, I am going to compare Mercurial line comands and Git command in common workflows. In any case, to go deeper in this technologies, i recommend you to check the oficial documentation.
 
-# Simple workflow comparator
+# Simple workflow comparation
 
 ## Starting from scratch
 ### Mercurial
